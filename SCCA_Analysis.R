@@ -7,6 +7,12 @@ library(glue)
 library(dplyr)
 library(psych)
 library(PMA)
+#######################################################################################
+## Refer - 
+##1.Daniela M Witten and Robert J Tibshirani. Extensions of sparse canonical correlation analysis with applications to genomic data. 
+##Statistical applications in genetics and molecular biology, 8(1), 200
+##2. Code was adpated from the work by - Nguyen, Quang P., et al. "Associations between the gut microbiome and metabolome in early life." 
+##BMC microbiology 21.1 (2021): 1-19.
 ########################################################################################
 data_cell <- read.csv('Filename.csv', header=TRUE, row.names = 2, check.names = FALSE) 
 data_cell <- na.omit(data_cell)
