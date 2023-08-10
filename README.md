@@ -21,7 +21,3 @@ pression: the PARP inhibitor niraparib and two tyrosine kinase inhibitors, imati
 2. Exploratory data analysis (EDA) reveals differences in the dynamics of metabolites and cell counts between control and drug conditions
 3. Sparse canonical correlation analysis revealed associations between cell types and metabolites in the BM-OOC
 
-## Organization of the repository
-1. The R folder contains the all R scripts used for Splines Modeling, SCCA Analysis and EDA analysis.
-2. The python folder containes .ipynb files used for initial data processing and analysis
-3. The Data folder contains the raw experimental data
