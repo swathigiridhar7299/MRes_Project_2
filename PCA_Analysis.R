@@ -1,13 +1,12 @@
 #load libraries
 library("factoextra")
 library("FactoMineR")
-library(ggsci)
 library(ggpubr)
 library(RColorBrewer)
-library(umap)
+
 data <- read.csv('file.csv') 
 data <- na.omit(data)
-pca.data <- PCA(plot_data, scale.unit = TRUE, graph = FALSE)
+pca.data <- PCA(data, scale.unit = TRUE, graph = FALSE)
 fviz_eig(pca.data, addlabels = TRUE, ylim = c(0, 70))
 b<-fviz_pca_var(pca.data, col.var = "cos2",
                 gradient.cols = c("#FFCC00", "#CC9933", "#660033", "#330033"),
